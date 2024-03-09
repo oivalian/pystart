@@ -54,7 +54,7 @@ touch setup.py
 echo Boiler "setup.py" generated at $PWD
 sleep 0.3
 touch LICENSE.txt
-echo Empty license file "LICENSE.txt" generated at $PWD
+echo Empty license file "LICENSE" generated at $PWD
 sleep 1
 mkdir "$project"
 echo Directory "$project" generated at $PWD 
