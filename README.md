@@ -30,7 +30,7 @@ The tree is structured as it would for libraries as follows:
 ```
 
 > [!WARNING]
-> If there is an existing directory, PyStart will prompt you if you wish to overwrite it. Doing so will DELETE the existing directory. USE CATION
+> If there is an existing directory, PyStart will prompt you if you wish to overwrite it. Doing so will DELETE the existing directory. USE CAUTION
 
 ```
 'myPyProject' is an existing directory. Would you like to ovewrite it? [Y|N]: y
