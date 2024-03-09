@@ -4,18 +4,17 @@ A short and simple bash script that initiates a base python directory structure
 
 ###  Running the script
 
-Navigate to the desired directory, run the script with the directory. You'll then be prompted for a project name:
+Navigate to the desired directory and run the script. You'll then be prompted for a project name:
 
 ```
 =-=-= PYSTART =-=-=
 Project Name: 
-
 ```
 
 PyStart will then take a few seconds to create the directory structure:
 
 ```
-creating pystart tree ...
+creating PyStart tree ...
 ```
 
 The tree is structured as follows:
