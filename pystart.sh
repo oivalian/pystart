@@ -13,7 +13,7 @@ if [ -d "$project" ]; then
 
 	# Options for choice.
 	if [ "$choice" = "y" ] || [ "$choice" = "yes" ]; then
-		read -p "Are you sure you wish to ovewrite directory? All files and sub-directories contained within will be lost [Y|N]: " choice	
+		read -p "Are you sure you wish to ovewrite directory? All files and subdirectories contained within will be lost [Y|N]: " choice	
 		choice=$(echo "$choice" | tr "[:upper:]" "[:lower:]") # translates choice to lower
 
 		if [ "$choice" = "y" ] || [ "$choice" = "yes" ]; then
