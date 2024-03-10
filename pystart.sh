@@ -19,12 +19,10 @@ if [ -d "$project" ]; then
 		if [ "$choice" = "y" ] || [ "$choice" = "yes" ]; then
 			rm -rf "$project" # force removes project directory 
 			# This creates the project directory
-			echo creating PyStart tree ...
-			sleep 2	
+			echo "creating PyStart tree ..."
 			mkdir "$project"
-			echo Directory "$project" created at $PWD 
+			echo "Directory '"$project"' created at $PWD" 
 			cd "$project" || return
-			sleep 1
 		else
 			echo "terminating..."
 			exit 1
@@ -37,41 +35,38 @@ if [ -d "$project" ]; then
 else
 
 	# This creates the project directory
-	echo creating PyStart tree ...
-	sleep 2	
+	echo "Creating PyStart tree ..."
+	sleep 1	
 	mkdir "$project"
-	echo Directory "$project" created at $PWD 
+	echo "Directory '"$project"' created at $PWD" 
 	cd "$project" || return
-	sleep 1
+	sleep 0.5
 
 fi
 
 # creates the files and directories
 touch README.md
-echo Empty readme file "README.md" generated at $PWD
-sleep 0.3
+echo "Empty readme file 'README.md' generated at $PWD"
 touch setup.py
-echo Boiler "setup.py" generated at $PWD
-sleep 0.3
+echo "Boiler 'setup.py' generated at $PWD"
 touch LICENSE.txt
-echo Empty license file "LICENSE" generated at $PWD
-sleep 1
+echo "Empty license file 'LICENSE' generated at $PWD"
 mkdir "$project"
-echo Directory "$project" generated at $PWD 
+echo "Directory '"$project"' generated at $PWD"
+sleep 0.5
 cd "$project" || return
-sleep 1
 touch __init__.py
-echo Empty initialisation file "__init__.py" generated at $PWD
-sleep 0.3
+echo "Empty initialisation file '__init__.py' generated at $PWD"
 touch "$project".py
-echo Empty Python file ""$project".py" generated at $PWD
-sleep 0.3
-cd ../../
-sleep 1
-echo PyStart tree created at $PWD
+echo "Empty Python file '"$project".py' generated at $PWD"
+cd ../
+sleep 0.5
+echo "PyStart tree created at $PWD"
+
+
 
 # adds default boiler to setup.py
-cat <<EOF >../setup.py
+cat <<EOF >./setup.py
 from setuptools import setup, find_packages
 
 VERSION = "1.0"
